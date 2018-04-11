@@ -6,9 +6,9 @@ import System.Environment
 
 run :: IO ()
 run = do
-  let ints = [2 .. 100000]
+  let ints = [1 .. 50000]
       calculated = filter (>50) (fmap numberOfDivisors ints)
-  print calculated
+  print $ length calculated
 
 numberOfDivisors :: Int -> Int
 numberOfDivisors n = length $ divisors n
