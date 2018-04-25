@@ -1,7 +1,7 @@
 module Main where
 
 import Lib
-import HelloWorld
+import EvalDemo
 
 main :: IO ()
 main = run
